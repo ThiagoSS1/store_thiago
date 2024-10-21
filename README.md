@@ -14,4 +14,4 @@ After the successfull installation of the packages: `yarn dev`
 
 ## Test
 
-Run `yarn test` to run testing
+Run `yarn test` to run testing.
