@@ -1,0 +1,105 @@
+.slide {
+  display: flex;
+  margin-top: 50px;
+  width: 1240px;
+  height: 460px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6), /* Sombra embaixo */
+              0px -4px 10px rgba(0, 0, 0, 0.6), /* Sombra em cima */
+              4px 0px 10px rgba(0, 0, 0, 0.6), /* Sombra à direita */
+              -4px 0px 10px rgba(0, 0, 0, 0.6); /* Sombra à esquerda */
+}
+
+.left {
+  flex: 2;
+  position: relative;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.right .top,
+.right .bottom {
+  flex: 1;
+  position: relative;
+}
+
+.right .top img,
+.right .bottom img,
+.left img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000; 
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.swiper-button-next {
+  right: 270px; 
+}
+
+.swiper-button-prev {
+  left: 270px; 
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #add8e6; /* Azul bebê */
+}
+
+.overlay {
+position: absolute;
+bottom: 10px;
+left: 10px;
+display: flex;
+gap: 10px;
+}
+
+.buy-button {
+  width: 120px;
+  height: 30px;
+  background-color: #5f738a4d;
+}
+
+.wishlist-button {
+ 
+  background-color: #435467;
+}
+
+.buy-button,
+.wishlist-button {
+color: white;
+border-color: #435467;
+border-width: 1px ;
+border-style: solid;
+border: none;
+padding: 10px;
+cursor: pointer;
+font-size: 16px;
+height: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 3px;
+font-family: 'open sans', 'Arial', 'Helvetica';
+line-height: 1;
+font-weight: bold;
+}
+
+.buy-button:hover {
+  background-color: rgba(255, 0, 0, 0.788); 
+  color: white; 
+}
+

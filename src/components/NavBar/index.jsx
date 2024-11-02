@@ -1,22 +1,34 @@
-import './styles.css'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { FaSearch,  FaStar } from 'react-icons/fa';
+import './styles.css';
+import logo from '../NavBar/nuuvem.svg'; 
+import Cart from '../Cart';
 
-function NavBar() {  
+const Navbar = () => {
   return (
-    <div className="navbar">
-    <h1>Thiago Store</h1>
-     
-    <nav className='menu'>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Produtos</a></li>
-            <li><a href="#">Novidades</a></li>
-            <li><a href="#">Descontos</a></li>
-        </ul>
+    <nav className="navbar">
+      <div className="navbar-logo">
+        { <img src={logo} alt="Logo" /> }
+      </div>
+      <div className="navbar-links">
+        <NavLink to="/highlights">
+        <FaStar className='icon' />
+        Highlights
+        </NavLink>
+        <NavLink to="/pc">PC</NavLink>
+        <NavLink to="/consoles">Consoles</NavLink>
+        <NavLink to="/mobile">Mobile</NavLink>
+      </div>
+      <div className="navbar-search">
+        <input type="text" placeholder="Search" />
+        <FaSearch className="search-icon" />
+      </div>
+      <Cart />
     </nav>
+  );
+};
+
+export default Navbar;
 
 
-    </div>
-  )
-}
-
-export default NavBar

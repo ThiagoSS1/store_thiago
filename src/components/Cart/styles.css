@@ -1,0 +1,34 @@
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espaçamento entre os ícones */
+    color: #fff;
+  }
+  
+  .navbar-actions span {
+    font-size: 16px;
+    font-family: 'Opens Sans', sans-serif, Arial, Helvetica;
+  }
+  
+  .navbar-actions svg {
+    color: #b0c4de; /* Light blue for icons */
+    font-size: 15px;
+  }
+  
+  .navbar-actions svg:hover {
+    color: #fff;
+  }
+
+ .item-count {
+  margin-left: 8px;
+ }
+
+ .navbar-actions .cart-icon {
+  display: flex;
+  background-color: rgb(72, 72, 75);
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 30px;
+ }
