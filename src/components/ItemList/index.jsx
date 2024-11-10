@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Item from '../Item';
 import './styles.css';
 
-const ItemList = () => {
+const ItemList = ( {onItemClick}) => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
@@ -26,8 +26,10 @@ const ItemList = () => {
     return (
         <div className="item-list-container">
             <div className="item-list">
-                {products.map((product, index) => (
-                    <Item key={index} product={product} />
+            {products.map((product, index) => (
+                    <div key={index} onClick={() => onItemClick(product)}>
+                        <Item product={product} />
+                    </div>
                 ))}
             </div>
         </div>
