@@ -3,18 +3,18 @@ import { Navigation} from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css'
 import 'swiper/css/navigation'
-import './styles.css'; // Import the CSS file for styling
+import './styles.css'; 
 import { FaRegHeart } from 'react-icons/fa';
 
 const ProductSlider = ({ products }) => {
   return (
     <Swiper 
+    className='swiper-container'
     modules={[Navigation]}
     spaceBetween={50} 
     slidesPerView={1} 
     pagination={{ clickable: true }}
-    navigation={true}
-    
+    navigation={true} 
     >
       {products.map((product, index) => (
         <SwiperSlide key={index} style={{ background: '#333' }}>

@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px; /* Espaçamento entre os ícones */
+    gap: 10px; 
     color: #fff;
   }
   
@@ -12,7 +12,7 @@
   }
   
   .navbar-actions svg {
-    color: #b0c4de; /* Light blue for icons */
+    color: #b0c4de; 
     font-size: 15px;
   }
   

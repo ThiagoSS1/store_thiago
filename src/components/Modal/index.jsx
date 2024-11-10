@@ -19,7 +19,7 @@ const Modal = ({ products, stock, initial, onAdd, onClose }) => {
     products.forEach((product, index) => {
       const quantity = quantities[index];
       console.log(`Finalizando compra de ${quantity} ${product.name}`);
-      // Aqui você pode adicionar a lógica para finalizar a compra
+      //  lógica 
     });
     onClose();
   };

@@ -32,7 +32,7 @@ const Navbar = () => {
       console.log(`Novo contador do carrinho: ${newCount}`);
       return newCount;
     });
-    
+
   };
 
   return (
@@ -54,7 +54,7 @@ const Navbar = () => {
         <FaSearch className="search-icon" />
       </div>
       <div className="cart-container" style={{ position: 'relative' }} onClick={handleCartClick}>
-        <Cart count={cartCount}/>
+        <Cart count={cartCount} />
         {isModalOpen && (
           <Modal
             products={selectedProducts}
